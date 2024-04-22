@@ -1,0 +1,316 @@
+*{
+	padding:0;
+	margin:0;
+}
+.container{
+	height:100vh;
+	background-color:white;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+.sidebar{
+	flex:1;
+	background-color:#080f0d;
+	color:#e1efea;
+	font-family:Google Sans,Helvetica Neue,sans-serif;
+	font-weight:bold;
+	padding:10px;
+  transition: 0.5s;
+}
+
+.addbtn{
+	width:140px;
+	height:40px;
+	margin-top:100px;
+	margin-bottom:30px;
+	background-color:#303030;
+	border-radius:50px;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	text-decoration:none;
+}
+
+.addbtn > * {
+	color:grey;
+}
+
+.dropmenu{
+	margin-right:10px;
+}
+
+.list{
+	display:flex;
+	color:white;
+	text-decoration: none;
+	justify-content:space-between;
+	align-items:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+}
+.list > * {
+	padding:5px;
+}
+ 
+.list:hover{
+	background-color:#303030;
+	border-radius:20px;
+} 
+
+.main{
+	flex:4;
+	background-color:#080f0d;
+}
+
+.menu{
+	margin-top:1px;
+	padding:10px
+}
+
+.menu > div > *{
+	margin-right:20px;
+}
+
+.menu > div {
+	margin-top:10px;
+}
+
+.info{
+	padding:10px
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+
+
+
+.header{
+	display:flex;
+	color: #e1efea;
+	font-weight:bold;
+	font-family:Google Sans,Helvetica Neue,sans-serif;
+	font-size:20px;
+	padding:20px;
+	align-items:center;
+	justify-content:space-between;
+	flex-wrap:wrap;
+
+}
+
+.trybtn{
+	background-color:#832A92;
+	padding:1vw;
+	height:3vw;
+	border-radius:3vw;
+	font-size:2vw;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.trybtn > *{
+	margin-right:3vw;
+}
+
+.avatar{
+	font-size:2vw;
+	display:flex;
+	margin:5px;
+	height:5vw;
+	width:5vw;
+	background-color:#834333;
+	border-radius:50px;
+	justify-content:center;
+	align-items:center;
+}
+
+
+.alertbar{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	background-color:#062e6f;
+	height:2vw;
+	font-size:15px;
+	padding:10px;
+	color:white;
+}
+
+
+.circle-icon{
+	background-color:#000;
+	margin:10px;
+	width:4vw;
+	height:4vw;
+	border-radius:50%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:absolute;
+	bottom:0;
+	right:0
+}
+
+h1 {
+  background: -webkit-linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+	font-size:4vw;
+	padding:1vw;
+}
+
+.content{
+	height:400px;
+	overflow-x: auto;
+	overflow-y:auto;
+	padding-left:5vw;
+	padding-right:5vw
+}
+
+
+.cards{
+	display:flex;
+}
+
+.card {
+	flex:1;
+	position: relative;
+	background-color:#303030;
+	height:10vw;
+/*	width:150px;*/
+	font-size:1.5vw;
+	margin:10px;
+	border-radius:20px;
+	padding:15px;
+	color:white;
+	font-family:Google Sans,Helvetica Neue,sans-serif;
+
+}
+
+.card:hover{
+	background-color:#080f0d;
+}
+
+.alertmessage{
+	display:flex;
+	background-color:black;
+	color:white;
+	padding-top:1vw;
+	padding-bottom:3vw;
+	margin:2vw;
+	height:9vw;
+	border-radius:10px;
+}
+
+.btngroup{
+	display:flex;
+	padding-top:5px;
+}
+
+.btngroup > div {
+/*	background-color: #303030;*/
+	height:20px;
+	padding:10px;
+	margin-left:10px;
+	border-radius:10px;
+	color: #4285f4
+
+}
+
+.btngroup > div:hover {
+	background-color: #303030;
+
+}
+
+.alertmessage > div {
+	margin:2vw;
+	font-size:1.5vw;
+}
+
+
+.footer{
+
+	display:flex;
+	justify-content:center;
+}
+
+.search{
+	display:flex;
+	color:white;
+	font-family:Helvetica Neue,sans-serif;
+	align-items:center;
+	padding-left:2vw;
+	padding-right:2vw;
+	justify-content:space-between;
+	background-color:#303030;
+	height:60px;
+	width:70vw;
+	border-radius:20px;
+	border:none;
+
+}
+
+.footer > div > a {
+	padding-left:2vw;
+}
+
+.footer{
+	padding-top:5px;
+}
+
+.search > div > * {
+	padding-left:0;
+}
+
+button{
+
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #14241f; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@media (max-width:900px){
+	.main{
+		flex:100%;
+		order:1
+	}
+	.sidebar{
+		flex:0%;
+		display:none;
+	}
+	.search{
+		width: 90%;
+	}
+}
