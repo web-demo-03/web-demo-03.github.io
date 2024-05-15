@@ -3,159 +3,284 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Gemini from google clone</title>
-	<script src="https://kit.fontawesome.com/da66a61b5c.js" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<title>app</title>
 </head>
 <body>
 
-	<div class="container">
-		<div class="sidebar">
-			<div><a href="#"><i class="fa-solid fa-list fa-xl"></i></a></div>
-			<a class="addbtn" href="#add" ><i class="fa-plus fa-list fa-xl"></i><p>New chat</p></a>
-			<h2>Recent</h2>
-			<div style="height:250px; overflow: auto;">
-				<div class="list">
-					<i class="fa-solid fa-message"></i>
-					<h5>C++/c, javascript, python</h5>
-					<div class="dropmenu">
-						<i class="fa-solid fa-ellipsis-vertical"></i>
-					</div>
-				</div>
-				<div>
-					<a class="list" href="#">
-						<i class="fa-solid fa-message"></i>
-						<h5>مواقع مهمة للمبرمجين</h5>
-						<div class="dropmenu">
-							<i class="fa-solid fa-ellipsis-vertical"></i>
-						</div>
-					</a>
-				</div>
-				<a class="list" href="#">
-					<i class="fa-solid fa-message"></i>
-					<h5>Inconvénients de l'énergi</h5>
-					<div class="dropmenu">
-						<i class="fa-solid fa-ellipsis-vertical"></i>
-					</div>
-				</a>
-				<a class="list" href="#">
-					<i class="fa-solid fa-message"></i>
-					<h5>data structures and algorithms</h5>
-					<div class="dropmenu">
-						<i class="fa-solid fa-ellipsis-vertical"></i>
-					</div>
-				</a>
-				<a class="list" href="#">
-					<i class="fa-solid fa-message"></i>
-					<h5>barca vs real madrid</h5>
-					<div class="dropmenu">
-						<i class="fa-solid fa-ellipsis-vertical"></i>
-					</div>
-				</a>
-				<a class="list" href="#" style="justify-content:flex-start;">
-					<i class="fa-solid fa-caret-down"></i>
-					<small style="color:#4285f4">Show more</small>
-				</a>
-			</div>
-			<div class="menu">
-				<div><a href="#help"><i class="fa-solid fa-circle-info"></i> Help</a></div>
-				<div><a href="#activity"><i class="fa-solid fa-chart-line"></i> Activity</a></div>
-				<div><a href="#settings"><i class="fa-solid fa-gear"></i> Settings</a></div>
-			</div>
-			<div class="info">
-				<small><i class="fa-solid fa-circle-info"></i> New york, United states</small>
-				<small style="color:#4285f4">From your IP adress. <a style="color:#4285f4" href="#location">Update location</a></small>
-			</div>
-		</div>
-		<div class="main">
-			<header class="header">
-				<div>
-					<a href="#home">Gemini <i class="fa-solid fa-caret-down"></i></a>
-				</div>
-				<div style="display:flex; align-items:center;">
-					<a class="trybtn" href="#advanced">
-						<span style="color: yellow;">
-						  <i class="fa-solid fa-star"></i>
-						</span>
-						Try Geminu advanced
-					</a>
-					
-					<a href="#">
-						<div class="avatar">
-							Best
-						</div>
-					</a>
-					
-				</div>
-			</header>
-			<div class="alertbar">
-				 <div>
-				 	 <i class="fa-solid fa-medal"></i>
-					 Gemini was just updated.  
-					 <span style="text-decoration:underline;">
-					 	<a href="#update">See update</a>
-					 </span>
-				 </div>
-				 <div>
-				 	<a href="#close"><i class="fa-solid fa-xmark"></i></a>
-				 </div>
-			</div>
-			<div class="content">
-				<h1>Hello best, </br> how can i help you</h1>
-				<div class="cards">
-					<a href="#item1" class="card">
-						Teach me the concept of game theory in simple terms
-						<div class="circle-icon">
-							<i class="fa-solid fa-code"></i>
-						</div>
-					</a>
-					<a href="#item2"  class="card">
-						Write a thank you note to my colleague
-						<div class="circle-icon">
-							<i class="fa-regular fa-lightbulb"></i>
-						</div>
-					</a>
-					<a href="#item3"  class="card">
-						Help me pick a movie to watch based on a genre
-						<div class="circle-icon">
-							<i class="fa-regular fa-compass"></i>
-						</div>
-					</a>
-					<a href="#item4"  class="card">
-						Help create a weekly meal plan for two
-						<div class="circle-icon">
-							<i class="fa-regular fa-heart"></i>
-						</div>
-					</a>
-				</div>
-				<div class="alertmessage">
-					<div>
-						<i class="fa-solid fa-shield-halved fa-xl"></i>
-					</div>
-					<div>
-						<div >
-							Your conversations are processed by human reviewers to improve the technologies powering Gemini Apps. Don't enter anything that you wouldn't want to be reviewed or used.
-						</div>
-						<div class="btngroup">
-							<div><a style="color:#4285f4" href="#show">How it work</a></div>
-							<div><a style="color:#4285f4" href="#dismis">Dismis</a></div>
-						</div>
-					</div>
+	<div class="root">
+		<div class="introduction">
+			<div class="navbar">
+				<h1 class="home"><a href="#home">App name</a> </h1>
+				<div class="btn">
+					<button id="language">Language (English)</button>
+					<button id="signin"><a href="#signin">Sign-in</a></button>
 				</div>
 			</div>
-			<form  class="footer" >
-				<div style="align-self:center; position:absolute;right:4vw" >
-					<a href="#picturs"><i class="fa-solid fa-image fa-xl"></i></a>
-					<a href="#sound"><i class="fa-solid fa-microphone fa-xl"></i></a>
-				</div>
-				<input type="text" name="text" placeholder="Enter a promot here" class="search">
-				</input>
-			</form>
 
-			<div style="display:flex; justify-content:center;padding-top:20px">
-				<small style="color:white;">Gemini may display inaccurate info, including about people, so double-check its responses. <a href="#privacy"><span style="text-decoration:underline;">Your privacy and Gemini Apps</span></a></small>
+			<div class="content" >
+				<h1>Unlimited code, courses, videos, and more</h1>
+				<p>Ready to start? Enter your email to create your membership.</p>
+				<div class="start">
+					<input type="email" name="email" placeholder="Your email adress">
+					<button id="signin">Get started</button>
+				</div>
+			</div>
+
+		</div>
+		<div class="membership">
+			<h1 style="font-size:5vw;">Try Membership Plans</h1>
+			<div class="premium">
+				<div>
+					<div style="display:flex; align-items:center;">
+						<img style="width:2vw; height:2vw" src="assets/icons/free.png">
+						<h3 style="color:#FF5733; margin-left:1vw">Free</h3>
+					</div>
+					<div>
+						<h1>$00.00</h1>
+						<small style="font-size:1vw;">per month</small>
+					</div>
+					<div class="start">
+						<button style="background-color:#106332">Get started</button>
+					</div>
+				</div>
+				<div>
+					<div style="display:flex; align-items:center;">
+						<img style="width:2vw; height:2vw" src="assets/icons/check.png">
+						<h3 style="color:#FF5733; margin-left:1vw">Basic</h3>
+					</div>
+					<div>
+						<h1>$6.99</h1>
+						<small style="font-size:1vw;">per month</small>
+					</div>
+					<div class="start">
+						<button>Get started</button>
+					</div>
+				</div>
+				<div>
+					<div style="display:flex; align-items:center;">
+						<img style="width:2vw; height:2vw" src="assets/icons/premium.png">
+						<h3 style="color:#FF5733; margin-left:1vw">Professional</h3>
+					</div>
+					<div>
+						<h1>$29.99</h1>
+						<small style="font-size:1vw;">per month</small>
+					</div>
+					<div class="start">
+						<button>Get started</button>
+					</div>
+				</div>
+				<div>
+					<div style="display:flex; align-items:center;">
+						<img style="width:2vw; height:2vw" src="assets/icons/ss.png">
+						<h3 style="color:#FF5733; margin-left:1vw">Premier</h3>
+					</div>
+					<div>
+						<h1>$99.99</h1>
+						<small style="font-size:1vw;">per month</small>
+					</div>
+					<div class="start">
+						<button>Get started</button>
+					</div>
+				</div>
 			</div>
 		</div>
+			
+
+		
+		<div class="main">
+			<div>
+				<div>
+					<h1 class="title">Enjoy free  code.</h1>
+					<h3>Esay to start, Build projects, Share your code, and more.</h3>
+				</div>
+				<div class="image">
+					<img src="assets/images/programmer.png">
+				</div>
+			</div>
+
+			<div>
+				<div class="image">
+					<img src="assets/images/office.png">
+				</div>
+				<div>
+					<h1 class="title">Download your videos to watch offline</h1>
+					<h3>Save your favorites easily and always have something to watch.</h3>
+				</div>
+			</div>
+			<div>
+				<div>
+					<h1 class="title"> From beginners to advanced</h1> 
+					<h3>You are in the write place, whether if you have a beginner, intermediate, or advanced competency levels for a particular skill..</h3>
+				</div>
+				<div class="image">
+					<img src="assets/images/space.png">
+				</div>
+			</div>
+
+			<div>
+				<div class="image">
+					<img src="assets/images/solution.png">
+				</div>
+				<div>
+					<h1 class="title">A public platform building the definitive collection of coding questions & answers</h1>
+					<h3>A community-based space to find and contribute answers to technical challenges, and one of the most popular websites in the world.</h3>
+				</div>
+			</div>
+
+		</div>
+
+		<div>
+			
+		<div class="secure">
+			<div>
+				<h1>Your accont is safe and secure</h1>
+				<div class="securecard">
+					<div>
+						
+
+						<div id="discription" >
+							<span> <img src="assets/icons/safe.png" style="width:2vw;height:2vw"> </span>
+							<span>Our secure filter system intercepts emails from fraudsters and spam. Every email is checked automatically!</span>
+						</div>
+
+						<div id="discription" >
+							<span> <img src="assets/icons/forbidden.png" style="width:2vw;height:2vw"> </span>
+							<span>Da ta is stored in secure storage and encrypted when transmitted: no one can intercept it.</span>
+						</div>
+
+						<div id="discription" >
+							<span> <img src="assets/icons/lock.png" style="width:2vw;height:2vw"> </span>
+							<span>Two-factor authentication with a linked phone number is more secure than just a password.</span>
+						</div>
+
+					</div>
+					<div id="figure">
+						<img src="assets/icons/secure.png">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="quations">
+			<h1>frequent questions</h1>
+			<div class="quation">
+				<div>
+					<span class="quation-content" style="display:flex;align-items:center;">
+						<img style="height:1.5vw;width:1.5vw" src="assets/icons/quation.png">
+						<h3>What is the maximum file size I can send or upload</h3>
+					</span>
+				</div>
+			</div>
+			<div class="answer" >
+				<p>There is no maximum. Any max you are encountering is application specific or site specific?</p>
+			</div>
+		
+
+
+			<div class="quation">
+				<div>
+					<span class="quation-content" style="display:flex;align-items:center;">
+						<img style="height:1.5vw;width:1.5vw" src="assets/icons/quation.png">
+						<h3>how do i transfer my membership to a different plan?</h3>
+					</span>
+				</div>
+			</div>
+			<div class="answer" >
+				<p>You can choose whether they move immediately or at their next billing cycle date. The member does not need to approve or opt-in to the Plan move.</p>
+			</div>
+
+
+			<div class="quation">
+				<div>
+					<span class="quation-content" style="display:flex;align-items:center;">
+						<img style="height:1.5vw;width:1.5vw" src="assets/icons/quation.png">
+						<h3>How many course, code , video, image can add per day?</h3>
+					</span>
+				</div>
+			</div>
+			<div class="answer" >
+				<p>You can post as many photos, videos, course, as you can in one day. There's no limit to that.</p>
+			</div>
+
+		</div>
+
+
+		</div>
+
+
+
+
+
+		<div class="footer">
+			<div class="contact">
+				<div class="btn">
+					<button id="language">Language (English)</button>
+				</div>
+				
+				<div class="social">
+					<a target="_blank" href="https://www.twitter.com"><img src="assets/icons/twitter.png"></a>
+					<a target="_blank" href="https://www.instagram.com"><img src="assets/icons/instagram.png"></a>
+					<a target="_blank" href="https://www.facebook.com"><img src="assets/icons/facebook.png"></a>
+					<a target="_blank" href="https://www.youtube.com"><img src="assets/icons/youtube.png"></a>
+					<a target="_blank" href="https://www.tiktok.com"><img src="assets/icons/tiktok.png"></a>
+				</div>
+			</div>
+			<div class="link">
+				<div>
+					<h5>Product</h5>
+					<a href="#Product-Dowloand">Dowloand</a>
+					<a href="#Product-Advertising">Advertising</a>
+					<a href="#Product-Status">Status</a>
+					<a href="#Product-Directory">Directory</a>
+					<a href="#Product-Teams">Teams</a>
+					<a href="#Product-Status">Status</a>
+					<a href="#Product-Collectives">Collectives</a>
+				</div>
+
+
+
+
+
+				<div>
+					<h5>Company</h5>
+					<a href="#Company-About">About</a>
+					<a href="#Company-Work">Work Here</a>
+					<a href="#Company-Talent">Talent</a>
+					<a href="#Company-Contact">Contact Us</a>
+				</div>
+
+				<div>
+					<h5>Resources</h5>
+					<a href="#Resources-Science">Science</a>
+					<a href="#Resources-Technology">Technology</a>
+					<a href="#Resources-Culture">Culture</a>
+					<a href="#Resources-Professional">Professional</a>
+					<a href="#Resources-Business">Business</a>
+					<a href="#Resources-Life">Life & arts</a>
+				</div>
+
+
+				<div>
+					<h5>Policies</h5>
+					<a href="#Policies-Privacy">Privacy</a>
+					<a href="#Policies-Help">Help</a>
+					<a href="#Policies-Licenses">Licenses</a>
+					<a href="#Policies-Terms">Terms</a>
+					<a href="#Policies-Guidelines">Guidelines</a>
+					<a href="#Policies-Cookie">Cookie</a>
+				</div>
+			</div>
+		</div>
+
+			<div class="copyright">
+				<small>&copy; 2024 AppName, Inc.</small>
+			</div>
+
 	</div>
 
 </body>
